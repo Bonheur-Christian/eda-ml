@@ -215,6 +215,18 @@
               >
                 Frequency Tables (One-way)
               </a>
+              <a
+                class="list-group-item list-group-item-action"
+                href="#profit-calculation"
+              >
+                Profit Calculation
+              </a>
+                <a
+                class="list-group-item list-group-item-action"
+                href="#cross-tabulation"
+              >
+                Cross Tabulation
+              </a>
             </div>
           </div>
         </div>
@@ -232,7 +244,20 @@
               <div class="card-header">Frequency Tables (One-way)</div>
               <div class="card-body">
                 {{ frequency_table|safe }}
-              </div>
+              </div>              
+            </div>
+              <div id="profit-calculation" class="data-card">
+              <div class="card-header">Profit Calculation</div>
+              <div class="card-body">
+                {{ profit_calculation|safe }}
+              </div>              
+            </div>
+            </div>
+              <div id="cross-tabulation" class="data-card">
+              <div class="card-header">Cross Tabulation</div>
+              <div class="card-body">
+                {{cross_tabulation|safe }}
+              </div>              
             </div>
           </div>
         </div>

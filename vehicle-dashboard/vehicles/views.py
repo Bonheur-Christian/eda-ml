@@ -1,6 +1,6 @@
 import pandas as pd
 from django.shortcuts import render
-from .dashboard import frequency_table
+from .dashboard import frequency_table, profit_calculation, cross_tabulation
 
 
 def dashboard_view(request):
@@ -10,4 +10,6 @@ def dashboard_view(request):
 
     return render(request, "vehicles/index.html", {
         "frequency_table": frequency_table(df),
+        "profit_calculation":profit_calculation(df), 
+        "cross_tabulation":cross_tabulation(df)
     })
